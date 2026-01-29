@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(135deg,#1abc9c,#16a085);
+    color:white;
+    padding:35px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2.3rem;
+    margin-bottom:8px;
+}
+
+header p{
+    opacity:0.9;
+}
+
+/* NAV */
+nav{
+    background:#2c3e50;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:5px;
+}
+
+nav a:hover{
+    background:#1abc9c;
+    transform:translateY(-2px);
+}
+img{
+    width: 100px;
+    height: 500px;
+    border-radius:8px;
+}
+/* MAIN */
+main{
+    padding:40px 20px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.card h2{
+    color:#16a085;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:1rem;
+}
+
+/* IMAGEN */
+.card img{
+    width:50%;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+/* FOOTER */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:18px;
+    margin-top:50px;
+    font-size:0.9rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    header h1{
+        font-size:1.8rem;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    nav a{
+        width:100%;
+        text-align:center;
+    }
+
+    main{
+        padding:20px 15px;
+    }
+
+    .card{
+        padding:20px;
+    }
+}
